@@ -1,0 +1,54 @@
+  // Author: Dan Campbell
+  // Module : CIS2715
+  // Description: Development Container
+  // Academic Year: 2024-2025
+{
+	"name": "CIS2715",
+	
+	"dockerComposeFile": "docker-compose.yml",
+
+	"service": "laravel",
+
+	
+	"customizations": {
+
+		
+		"otherPortsAttributes": { "onAutoForward" : "notify" },
+		"vscode": {
+		"settings": {
+		  "terminal.integrated.defaultProfile.linux": "bash",
+		  "terminal.integrated.profiles.linux": {
+			"bash": {
+			  "path": "/bin/bash"
+			}
+		  },
+		  "terminal.integrated.defaultProfile.osx": "bash",
+		  "terminal.integrated.profiles.osx": {
+			"bash": {
+			  "path": "/bin/bash"
+			}
+		  },
+		  "terminal.integrated.defaultProfile.windwows": "bash",
+		  "terminal.integrated.profiles.windows": {
+			"bash": {
+			  "path": "/bin/bash"
+			}
+		  }
+	  },
+	  "extensions": [
+      "xdebug.php-debug",
+      "antfu.browse-lite",
+      "PKief.material-icon-theme",
+      "laravel.vscode-laravel"
+    ]
+		}
+	},
+
+
+	"workspaceFolder": "/var/www/html",
+	
+
+	"onCreateCommand": "",
+	
+	"remoteUser": "root"
+}
